@@ -1,0 +1,347 @@
+.qr-area{
+	/* background-color: rgba(0,0,0,0.6); */
+	width: auto;
+	max-width: fit-content;
+	display: flex;
+	flex-direction: column;
+	user-select: none;
+	/* padding: 15px; */
+	/* border-radius: 10px; */
+}
+.qr-heading{
+	display: flex;
+	padding: 10px 15px 10px 15px;
+	border-top-left-radius: 10px;
+	width: 380px;
+	/* backdrop-filter: 会让该元素处于 z-index 很高的层级，无法被覆盖！ */
+	/* backdrop-filter: blur(36px) saturate(0.5); */
+	
+	justify-content: space-between;
+}
+.qr-area.enabled .qr-heading{
+	/* border-left: 1px solid rgba(120, 204, 50, 1);
+	border-bottom: 1px solid rgba(120, 204, 50, 1); */
+	/* border-top: 1px solid rgba(120, 204, 50, 1);
+	border-bottom: 1px solid rgba(120, 204, 50, 1); */
+	/* background-color: rgba(0,36,0,0.75); */
+	background-image: linear-gradient(to bottom, rgba(0,72,0,0.75) 0, rgba(0, 0, 0, 0.8) 80%);
+}
+.qr-area.disabled .qr-heading{
+	/* border: 1px solid rgba(255, 30, 50, 1); */
+	/* background-color: rgba(36,0,0,0.75); */
+	background-image: linear-gradient(to bottom, rgba(72,0,0,0.75) 0, rgba(0, 0, 0, 0.8) 80%);
+}
+.qr-heading-status{ /*已启用*/
+	font-size: 16px;
+	line-height: 21px;
+	font-weight: bold;
+	user-select: none;
+}
+.qr-area.enabled .qr-heading-status{
+	color: rgba(120, 204, 50, 1);
+}
+.qr-area.disabled .qr-heading-status{
+	-webkit-text-stroke: 0.7px;
+	color: rgba(255, 30, 50, 1);
+}
+.qr-heading-num-wrap{
+	display: flex;
+	width: 280px;
+	justify-content: space-between;
+}
+.qr-heading-num-text{ /*金额范围*/
+	line-height: 21px;
+	margin-right: 3px;
+	user-select: none;
+}
+.qr-heading-num{
+	outline: none;
+	padding: 0 5px;
+	color: rgba(0,0,0,1);
+	font-size: 14px;
+	font-family: "YAHEI";
+	font-weight: 500;
+	text-align: center;
+	background-color: rgba(255,255,255,0.55);
+	border: none;
+	border-radius: 5px;
+	width: 80px;
+	letter-spacing: 0.5px;
+	transition: 0.18s;
+	user-select: none;
+}
+.qr-heading-num:focus{
+	color: rgba(0,0,0,0.8);
+	background-color: rgba(255,255,255,0.85);
+	transition: 0.18s;
+}
+.qr-heading-tilde{
+	user-select: none;
+}
+.btn-range-ok{ /*  */
+	border-radius: 5px;
+	margin-left: 3px;
+	padding: 0 5px;
+	color: rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.2);
+	cursor: not-allowed;
+	user-select: none;
+	transition: 0.18s;
+}
+.btn-range-ok.clickable{
+	color: rgba(255,255,255,0.9);
+	background-color: brown;
+	cursor: pointer;
+	transition: 0.18s;
+}
+/*body 部分*/
+.qr-container{
+	margin-bottom: 15px;
+	padding: 10px 0 10px 15px;
+	/* min-width: 390px; */
+	width: fit-content;
+	background-color: rgba(0,0,0,0.8);
+	/* border-radius: 10px; */
+	/* backdrop-filter: blur(36px); */
+	border-top-left-radius: 0;
+}
+/* .qr-container::after{
+	content: "";
+	clear: both;
+} */
+.qr-container.enabled{
+	border-top: 1px solid rgba(120, 204, 50, 1);
+	border-bottom: 1px solid rgba(120, 204, 50, 1);
+}
+.qr-container.disabled{
+	border-top: 1px solid rgba(255, 30, 50, 1);
+	border-bottom: 1px solid rgba(255, 30, 50, 1);
+}
+.qr-position{
+	float: left;
+	margin-right: 15px;
+	width: 100px;
+	height: 118px;
+}
+.qr-position.pos-hover .qr-item-docker{ /*when pos hovered => how dockerItem change*/
+
+}
+.qr-position.pos-hover .docker-add{ /*when pos hovered => how dockeradd change*/
+	background-image: radial-gradient(circle, rgba(102, 172, 102, 0.1), rgba(102, 172, 102, 0.5)), url(../img/add.svg);
+	box-shadow: 0 0 30px 5px rgba(102, 172, 102, 0.5);
+	filter: brightness(1.5);
+}
+.qr-position-order{
+	text-align: center;
+	user-select: none;
+}
+/* docker */
+.qr-item-docker{
+	border-radius: 8px;
+	width: 100px;
+	height: 99px;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+.docker-occupied{
+	background-image: radial-gradient(circle, rgba(102, 102, 102, 0.1), rgba(102, 102, 102, 0.5)), url(../img/take-out.svg);
+}
+.docker-add{
+	background-image: radial-gradient(circle, rgba(102, 102, 102, 0.1), rgba(102, 102, 102, 0.5)), url(../img/add.svg);
+}
+.docker-occupied.hover{
+	background-image: radial-gradient(circle, rgba(102, 102, 170, 0.1), rgba(102, 102, 170, 0.5)), url(../img/take-out.svg);
+}
+.docker-add.hover{
+	background-image: radial-gradient(circle, rgba(102, 170, 102, 0.1), rgba(102, 170, 102, 0.5)), url(../img/add.svg);
+}
+/* item */
+.qr-item{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 3px;
+	border: 1px solid rgba(255,255,255,0.35);
+	border-radius: 8px;
+	width: 100px;
+	background-color: rgba(0,0,0,1);
+	transition: 0.18s;
+	z-index: 1;
+	overflow: hidden;
+}
+.qr-item:hover{
+	color: rgba(255,255,255,1);
+	border: 1px solid rgba(255,255,255,0.5);
+	transition: 0.18s;
+}
+.qr-item:hover .qr-img-common{
+	filter: grayscale(0);
+	transition: 0.18s;
+}
+.qr-item:hover .qr-filename{
+	border-bottom: 1px solid rgba(255,255,255,0.5);
+	transition: 0.18s;
+}
+.qr-item.drag{
+	box-shadow: 0 0 10px 2px rgba(100,100,255);
+	position: absolute;
+	z-index: 2;
+	transition: 0s;
+}
+.qr-delete{
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-top-right-radius: 8.1px;
+	border-bottom-left-radius: 3px;
+	width: 23px;
+	height: 23px;
+	line-height: 23px;
+	font-size: 12px;
+	color: rgba(255,255,255,0.25);
+	text-align: center;
+	cursor: pointer;
+	/* background-color: #d80d1c; */
+	transition: 0.18s;
+}
+.qr-delete:hover{
+	color: rgba(255,255,255,0.65);
+	background-color: rgba(216, 13, 28, .8);
+	transition: 0.18s;
+}
+/* qr-item-placer */
+.qr-item-placer{
+	border: 1px solid rgba(255,255,255,0.2);
+	border-radius: 8px;
+	width: 100px;
+	height: 99px;
+	text-align: center;
+	line-height: 97px;
+	user-select: none;
+	opacity: 0;
+}
+.qr-filename{
+	padding: 2px 5px;
+	height: 24px;
+	line-height: 19px;
+	font-size: 12px;
+	border-bottom: 1px solid rgba(255,255,255,0.35);
+	user-select: none;
+	transition: 0.18s;
+	cursor: grab;
+	/* white-space: nowrap; */
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.qr-img-wrap{
+	display: flex;
+	justify-content: space-between;
+	padding: 3px 3px;
+	margin-bottom: 1px;
+	cursor: grab;
+}
+.qr-img-common{ /* 小图-公共*/
+	border-radius: 5px;
+	width: 44px;
+	height: 44px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	filter: grayscale(0.55);
+	transition: 0.18s;
+}
+.qr-method{ /* 小图-method */
+	
+}
+.qr-img{ /* 小图-二维码*/
+	
+}
+.qr-img-alipay{
+
+}
+/* 可编辑区 */
+.qr-info-edit{
+	height: 0px;
+	overflow: hidden;
+	transition: 0.18s;
+}
+.qr-info-edit.show{
+	height: 72px;
+	transition: 0.18s;
+}
+.qr-text-wrap{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	height: 34px;
+	margin-bottom: 2px;
+}
+.qr-text-head-wrap{
+	width: 92px;
+	display: flex;
+	justify-content: space-between;
+}
+.qr-text-label{
+	font-size: 12px;
+	user-select: none;
+	cursor: pointer;
+}
+.btn-qr-text{
+	border-radius: 5px;
+	font-size: 12px;	
+	color: rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.3);
+	cursor: not-allowed;
+	user-select: none;
+	padding: 0 5px;
+	transition: 0.18s;
+}
+
+.btn-qr-text.clickable{
+	background-color: brown;
+	color: rgba(255,255,255,0.9);
+	cursor: pointer;
+	transition: 0.18s;
+}
+.btn-qr-text.clickable:hover{
+	filter: brightness(1.2);
+	transition: 0.18s;
+}
+.input-text{
+	outline: none;
+	border: none;
+	padding: 0 3px;
+	border-radius: 5px;
+	width: 92px;
+	height: 16px;
+	color: white;
+	font-size: 12px;
+	background-color: rgba(255,255,255,0.2);
+	transition: 0.18s;
+}
+.input-text:focus,.input-text:hover{
+	background-color: rgba(255,255,255,0.35);
+	transition: 0.18s;
+}
+.input-text::placeholder{
+	font-size: 11px;
+	font-style: italic;
+}
+.btn-toggle-edit{
+	width: 92px;
+	height: 19px;
+	line-height: 18px;
+	border-radius: 5px;
+	margin: auto;
+	background-color:brown;
+	font-size: 12px;
+	cursor: pointer;
+	user-select: none;
+	text-align: center;
+	transition: 0.18s;
+}
+.btn-toggle-edit:hover{
+	filter: brightness(1.2);
+	transition: 0.18s;
+}

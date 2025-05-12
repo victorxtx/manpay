@@ -1,0 +1,62 @@
+array (
+  0 => 
+  array (
+    'filename' => 'wx01.png',
+    'method' => 'wxpay',
+  ),
+  1 => 
+  array (
+    'filename' => 'wx02.png',
+    'method' => 'wxpay',
+  ),
+  2 => 
+  array (
+    'filename' => 'wx03.png',
+    'method' => 'wxpay',
+  ),
+  3 => 
+  array (
+    'filename' => 'ali01.png',
+    'method' => 'alipay',
+  ),
+  4 => 
+  array (
+    'filename' => 'ali02.png',
+    'method' => 'alipay',
+  ),
+  5 => 
+  array (
+    'filename' => 'ali03.png',
+    'method' => 'alipay',
+  ),
+  6 => 
+  array (
+    'filename' => 'ali04.png',
+    'method' => 'alipay',
+  ),
+  7 => 
+  array (
+    'filename' => 'ali05.png',
+    'method' => 'alipay',
+  ),
+  8 => 
+  array (
+    'filename' => 'ali06.png',
+    'method' => 'alipay',
+  ),
+  9 => 
+  array (
+    'filename' => 'ali07.png',
+    'method' => 'alipay',
+  ),
+  10 => 
+  array (
+    'filename' => 'ali08.png',
+    'method' => 'alipay',
+  ),
+  11 => 
+  array (
+    'filename' => 'tank1_right_body.png',
+    'method' => 'huabei',
+  ),
+)

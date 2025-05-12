@@ -1,0 +1,32 @@
+/* settle-grid */
+.settle-grid{
+	display: flex;
+	margin-bottom: 0 10px;
+	width: fit-content;
+	min-width: fit-content;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	backdrop-filter: blur(30px) saturate(1.5);
+}
+.settle-column{
+	display: flex;
+	flex-direction: column;
+}
+.settle-cell{
+	font-size: 12.5px;
+	padding: 10px 8px;
+	white-space: nowrap;
+}
+.settle-cell-head{
+	font-weight: 500;
+	user-select: none;
+	text-align: center;
+}
+.settle-cell-data{
+	display: flex;
+	border-top: 1px solid rgba(255,255,255,0.075);
+	height: 37px;
+}
+.settle-cell-data-pid{
+	font-weight: bold;
+}

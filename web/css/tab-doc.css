@@ -1,0 +1,72 @@
+.tab-doc{
+	background-color: rgba(0,0,0,.75);
+	backdrop-filter: blur(32px);
+}
+.tab-title-sub{
+	font-weight: 500;
+}
+.doc-title{
+	font-size: 20px;
+	color: rgba(255, 255, 255, 1);
+	font-weight: 500;
+	margin: 20px 0 10px;
+}
+.doc-text{
+	font-size: 14px;
+	margin-bottom: 8px;
+}
+.doc-text-key{
+	color: rgba(255, 50, 50, 1);
+}
+.doc-text-sub{
+	margin: 0 0 5px 20px;
+}
+/* arg-grid */
+.arg-grid{
+	display: flex;
+	flex-direction: column;
+	background-color: rgba(0,0,0,0.05);
+	border-radius: 20px;
+	overflow: hidden;
+	padding: 2px;
+	width: 1400px;
+}
+.arg-row{
+	display: flex;
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.arg-row:nth-child(n+2):nth-child(-n+10){
+	background-color: rgba(50,255,120,0.2);
+}
+.arg-row:nth-child(n+10){
+	background-color: rgba(255,120,50,0.2);	
+}
+.arg-row:nth-last-child(1){
+	border-bottom: none;
+}
+.arg-row-head{
+	font-weight: bold;
+}
+.arg-cell{
+	white-space: nowrap;
+	padding: 10px 8px;
+}
+.arg-cell:nth-child(1){
+	width: 100px;
+}
+.arg-cell:nth-child(2){
+	width: 100px;
+}
+.arg-cell:nth-child(3){
+	width: 100px;
+}
+.arg-cell:nth-child(4){
+	width: 220px;
+}
+.arg-cell:nth-child(5){
+	width: 350px;
+}
+.arg-cell:nth-child(6){
+	width: fit-content;
+	
+}

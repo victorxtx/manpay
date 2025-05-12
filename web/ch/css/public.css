@@ -1,0 +1,10 @@
+.text-red{
+	font-size: inherit;
+	color: rgba(255, 50, 50, 1);
+	margin: 0 1px;
+}
+.text-green{
+	font-size: inherit;
+	color: rgba(50, 185, 50, 1);
+	margin: 0 1px;
+}
