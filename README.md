@@ -8,7 +8,8 @@ P.S 系统没有按照专业的软件工程编写，其中还有一些不合理�
 ## 2、本系统在 Linux Ubuntu 系统开发，适配最好。应该也能兼容 Win + PHP，若要使用 Windows，那么 Good Luck。
 ## 3、开发环境为 Ubuntu 22.04 + Nginx 1.28.0 + PHP 8.4.7 + MySQL-8.0.40，没有奇怪的逻辑代码，所以对上述组件版本要求不严格，但 PHP 最好别小于 7.0，MySQL 最好别小于 5.7，Nginx 都行。
 ## 4、开发用的 Nginx 和 PHP 均为自编译，非 apt yum 等安装版，整个过程我也没有统计需要开启什么模块，反正我知道的模块都开了，这里把我自己的编译参数贴一下。
-## 如果是愿意走编译流程的朋友，那么需要为编译安装依赖，下面分别贴一下，有重复无所谓，会自动忽略重复
+## 到这里还愿意继续的朋友注意了，下面的教程并不完整，默认会一些基本运维技术。下面开始。
+### 安装编译依赖
 ### apt install gcc build-essential libssl-dev libpcre2-dev zlib1g-dev libgd-dev libxslt1.1 libxslt1-dev libxml2-dev libgeoip-dev libperl-dev libgoogle-perftools-dev libatomic-ops-dev
 ### apt install gcc build-essential libsystemd-dev sqlite3 libsqlite3-dev libzip-dev libtidy-dev valgrind libsnmp-dev libenchant-2-dev libavif-dev libwebp-dev libgmp-dev libkrb5-dev libargon2-dev systemtap-sdt-dev libbz2-dev libpq-dev libaspell-dev libpspell-dev libedit-dev libmm-dev libsodium-dev libcurl4-openssl-dev libonig-dev libpng-dev libjpeg-dev libxpm-dev libfreetype-dev libxslt1-dev libexpat1-dev bison re2c postgresql libpq-dev autoconf
 ### Nginx 编译参数：（参数中提到的路径，需要自己去官网下载免费代码并放入 /repo/ 下解压。并不是每个参数在本项目中都必须，我暂时没有计划排查哪些模块必须，其中比较麻烦的是 brotli，如果不会搞可以删掉，brotli 非必须）
