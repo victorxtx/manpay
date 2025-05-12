@@ -36,10 +36,17 @@ P.S 系统没有按照专业的软件工程编写，其中还有一些不合理�
 ## 1、注册用户即为商户（修改 side 为 0 可以变成管理员；修改 side 为 1 可变成客服，客服不能上传收款二维码）
 ## 2、在未登录状态下，test.php 为模拟发起支付页面，需要先以管理员身份登录，设置收款金额范围、上传三类二维码后再使用模拟提交
 # 效果图
-![首页](https://img.vickygames.cn/manpay/index.jpg)
-![订单](https://img.vickygames.cn/manpay/order.jpg)
-![二维码管理](https://img.vickygames.cn/manpay/qr-admin.jpg)
-![二维码上传](https://img.vickygames.cn/manpay/qr-upload.jpg)
-![对接文档](https://img.vickygames.cn/manpay/api-doc.jpg)
-![商户管理](https://img.vickygames.cn/manpay/merch-admin.jpg)
-![结算列表](https://img.vickygames.cn/manpay/settle-show.jpg)
+<div>首页</div>
+<img src="https://img.vickygames.cn/manpay/index.jpg">
+<div>订单</div>
+<img src="https://img.vickygames.cn/manpay/order.jpg">
+<div>二维码管理</div>
+<img src="https://img.vickygames.cn/manpay/qr-admin.jpg">
+<div>二维码上传</div>
+<img src="https://img.vickygames.cn/manpay/qr-upload.jpg">
+<div>对接文档</div>
+<img src="https://img.vickygames.cn/manpay/api-doc.jpg">
+<div>商户管理</div>
+<img src="https://img.vickygames.cn/manpay/order.jpg">
+<div>结算列表</div>
+<img src="https://img.vickygames.cn/manpay/order.jpg">
