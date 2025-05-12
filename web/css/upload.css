@@ -1,0 +1,83 @@
+.tab-upload{
+	padding: 0;
+	user-select: none;
+}
+.up-area-wrap{
+	width: 100%;
+	height: calc(100vh - 52px);
+	min-height: 600px;
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+}
+.upload-item{
+	float: left;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 32%;
+	height: 420px;
+	margin-right: 2%;
+}
+.upload-item-huabei{
+	margin-right: 0;
+}
+.up-area-name{
+	text-align: center;
+	font-size: 28px;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-bottom: 10px;
+}
+.up-area-name-alipay{
+	color: rgba(0, 159, 233, 0.8);
+}
+.up-area-name-wxpay{
+	color: rgba(9, 187, 7, 0.8);
+}
+.up-area-name-huabei{
+	color: rgba(0, 159, 233, 0.8);
+}
+.up-area{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
+	border-radius: 10px;
+	padding: 10px;
+	height: fit-content;
+	backdrop-filter: blur(64px);
+	transition: 0.18s;
+	color: rgba(255,255,255,0.2);
+	filter: brightness(0.8);
+}
+.up-area.hover{
+	filter: brightness(1.0);
+	transition: 0.18s;
+}
+.up-area-alipay{
+	background-color: rgba(0, 159, 233, 0.618);
+}
+.up-area-wxpay{
+	background-color: rgba(9, 187, 7, 0.618);
+}
+.up-area-huabei{
+	background-color: rgba(0, 159, 233, 0.618);
+}
+.up-area-img{
+	margin-top: 40px;
+	pointer-events: none;
+}
+.up-img-name{
+	margin-top: 10px;
+	font-size: 36px;
+	color: rgba(255,255,255,0.7);
+	pointer-events: none;
+}
+.up-img-text{
+	margin-top: 10px;
+	font-size: 26px;
+	pointer-events: none;
+}

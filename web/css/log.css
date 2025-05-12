@@ -1,0 +1,31 @@
+.text-wrap{
+	font-weight: 500;
+}
+.log-content{
+	padding: 5px 15px;
+	
+}
+.log-title{
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	width: fit-content;
+	background-color: rgba(0,0,0,0.8);
+}
+.log-time{
+	color: rgba(255,200,20,1);
+	color: rgba(50, 120, 255, 0.8);
+}
+.log-text{
+	padding: 0px 20px 10px 30px;
+	background-color: rgba(0,0,0,0.8);
+	border-radius: 10px;
+	border-top-left-radius: 0;
+	width: fit-content;
+	min-width: 50%;
+}
+.log-text-done{
+	color: rgba(50, 185, 50, 1);
+}
+.log-text-todo{
+	color: rgba(255,200,20,0.618);
+}

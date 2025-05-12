@@ -1,0 +1,71 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+body{
+	width: 100vw;
+	height: 100vh;
+	background-image: linear-gradient(135deg, #C2FFD8 10%, #465EFB 100%);
+	user-select: none;
+}
+.main{
+	position: absolute;
+	inset: 0 0 0 0;
+	margin: auto;
+	width: 500px;
+	height: fit-content;
+	display: flex;
+	flex-direction: column;
+}
+.notice{
+	height: 42px;
+	line-height: 36px;
+	font-weight: 500;
+	font-size: 18px;
+}
+.btn-block{
+	margin-top: 20px;
+	display: flex;
+	justify-content: space-between;
+}
+.btn-who{
+	outline: none;
+	width: 148px;
+	height: 36px;
+	border: 1px solid rgba(164, 164, 164, 1);
+	border-radius: 5px;
+	font-size: 18px;
+	cursor: pointer;
+	transition: 0.18s;
+}
+.btn-who:hover{	
+	transition: 0.18s;
+}
+.btn-merch{
+	background-color: rgba(50, 184, 120, 1);
+	color: wheat;
+}
+.btn-merch:hover{
+	filter: contrast(1.1);
+}
+.btn-cust{
+	background-color: rgba(50, 120, 184, 1);
+	color: wheat;
+}
+.btn-cust:hover{
+	filter: brightness(1.1);
+}
+.btn-none{
+	background-color: rgba(178, 50, 20, 1);
+	color: wheat;
+}
+.btn-none:hover{
+	filter: brightness(1.1);
+}
+.color-green{
+	color: rgba(50, 184, 120, 1);
+}
+.color-red{
+	color: rgba(224, 50, 20, 1);
+}

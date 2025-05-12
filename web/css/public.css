@@ -1,0 +1,20 @@
+:root{
+	--color-btn-reset: rgba(108, 108, 36, 1);
+	--color-btn-max: rgba(0, 72, 148, 1);
+	--color-btn-settle: rgba(128, 0, 0, 1);
+}
+.text-red{
+	color: rgba(255, 50, 50, 1) !important;
+}
+.text-green{
+	color: rgba(50, 185, 50, 1) !important;
+}
+.text-blue{
+	color: rgba(50, 50, 224, 1) !important;
+}
+.text-orange{
+	color: rgba(224, 96, 0, 1) !important;
+}
+.text-middle{
+	font-weight: 500;
+}

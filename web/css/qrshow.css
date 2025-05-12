@@ -1,0 +1,89 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	user-select: none;
+}
+body{
+	background-color: #282828;
+	color: rgba(128,128,128,1);
+	font-weight: 500;
+	
+}
+.main{
+	margin: auto;
+	padding: 7% 3rem;
+	width: 400px;
+	height: 100vh;
+	border: 7px solid #282828;
+	/* border-right: 7px solid #282828; */
+	box-shadow: -4px -4px 10px rgba(67, 67, 67, 0.5), inset 4px 4px 10px rgba(0, 0, 0, 0.5), inset -4px -4px 10px rgba(67, 67, 67, 0.5), 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+.line-wrap{
+	margin-bottom: 7px;
+	display: flex;
+}
+.line-wrap.flex{
+	margin: 15px auto;
+	justify-content: space-evenly;
+}
+.line-wrap.center{
+	margin: 17px auto;
+	display: block;
+	text-align: center;
+	align-items:last baseline;
+}
+.line-wrap.center.hint{
+	font-size: 16px;
+}
+.line-wrap.vertical{
+	display: flex;
+	flex-direction: column;
+}
+.flex-label{
+	font-size: 22px;
+	line-height: 42px;
+}
+.yen{
+	font-size: 20px;
+}
+.yen-origin{
+	color: rgba(144,144,144,1);
+}
+.yen-final{
+	color: rgba(224,108,32,0.618);
+}
+.money{
+	font-size: 28px;
+}
+.money-origin{
+	color: rgba(164,164,164,1);
+	text-decoration: line-through;
+}
+.money-final{
+	color: rgba(224,108,32,1);
+}
+.qr-img{
+	margin: auto;
+	width: 244px;
+	height: 244px;
+	border-radius: 10px;
+	box-shadow:
+		-4px -4px 10px rgba(67, 67, 67, 0.8),
+		inset 4px 4px 20px rgba(0, 0, 0, 0.3),
+		inset -4px -4px 20px rgba(67, 67, 67, 0.3),
+		4px 4px 10px rgba(0, 0, 0, 0.618);
+	background-repeat: no-repeat;
+	background-size: contain;
+	filter: brightness(0.8);
+}
+.notice-name{
+	margin-top: 35px;
+	margin-bottom: 10px;
+	color: #a0a0a0;
+	font-size: 20px;
+}
+.notice-text{
+
+}
